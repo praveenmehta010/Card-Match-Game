@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class RegisterScreen extends StatelessWidget {
-  var nameControler = TextEditingController();
+class SignInScreen extends StatelessWidget {
+  // var nameControler = TextEditingController();
   var emailControler = TextEditingController();
   var passwordControler = TextEditingController();
 
@@ -9,7 +9,7 @@ class RegisterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Register"),
+        title: Text("Sign In"),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -18,22 +18,22 @@ class RegisterScreen extends StatelessWidget {
             padding: EdgeInsets.all(20),
             child: Column(
               children: [
-                Container(
-                  margin: EdgeInsets.all(10),
-                  child: TextField(
-                    controller: nameControler,
-                    decoration: InputDecoration(
-                      label: Text(
-                        "UserName",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
-                      ),
-                      hintText: "Enter your name",
-                    ),
-                  ),
-                ),
+                // Container(
+                //   margin: EdgeInsets.all(10),
+                //   child: TextField(
+                //     controller: nameControler,
+                //     decoration: InputDecoration(
+                //       label: Text(
+                //         "UserName",
+                //         style: TextStyle(
+                //           fontWeight: FontWeight.bold,
+                //           fontSize: 20,
+                //         ),
+                //       ),
+                //       hintText: "Enter your name",
+                //     ),
+                //   ),
+                // ),
                 Container(
                   margin: EdgeInsets.all(10),
                   child: TextField(
@@ -71,7 +71,7 @@ class RegisterScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text("Sing UP"),
+                  child: Text("Sing In"),
                 ),
                 Container(
                   margin: EdgeInsets.symmetric(vertical: 50),
@@ -81,7 +81,7 @@ class RegisterScreen extends StatelessWidget {
                       Container(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          " # Other methods to SingUp :- ",
+                          " # Other methods to SingIn :- ",
                           style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
@@ -100,7 +100,7 @@ class RegisterScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "SingUp with Google :- ",
+                                  "SingIn with Google :- ",
                                   style: TextStyle(
                                     fontSize: 17,
                                     fontWeight: FontWeight.bold,
@@ -109,7 +109,7 @@ class RegisterScreen extends StatelessWidget {
                                 ElevatedButton(
                                   onPressed: () {},
                                   child: Text(
-                                    "Google signUP",
+                                    "Google signIn",
                                   ),
                                 ),
                               ],
@@ -118,7 +118,7 @@ class RegisterScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "SignUp with GitHub :- ",
+                                  "SignIn with GitHub :- ",
                                   style: TextStyle(
                                     fontSize: 17,
                                     fontWeight: FontWeight.bold,
@@ -126,7 +126,7 @@ class RegisterScreen extends StatelessWidget {
                                 ),
                                 ElevatedButton(
                                   onPressed: () {},
-                                  child: Text("GitHub signUp"),
+                                  child: Text("GitHub signIn"),
                                 ),
                               ],
                             ),
@@ -134,7 +134,7 @@ class RegisterScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "SignUp with FaceBook :- ",
+                                  "SignIn with FaceBook :- ",
                                   style: TextStyle(
                                     fontSize: 17,
                                     fontWeight: FontWeight.bold,
@@ -142,7 +142,7 @@ class RegisterScreen extends StatelessWidget {
                                 ),
                                 ElevatedButton(
                                   onPressed: () {},
-                                  child: Text("FaceBook signUp"),
+                                  child: Text("FaceBook signIn"),
                                 ),
                               ],
                             ),
